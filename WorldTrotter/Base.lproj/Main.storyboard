@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Conversion View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -49,9 +49,13 @@
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="fahrenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="A4p-YE-jsJ"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="J7Y-6i-cwf" firstAttribute="top" secondItem="jJ0-DA-xMz" secondAttribute="bottom" constant="22" id="2PY-2b-mth"/>
                             <constraint firstItem="6Dt-4J-FPR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5mr-83-bQT"/>
@@ -64,9 +68,21 @@
                             <constraint firstItem="hlA-lR-dAC" firstAttribute="top" secondItem="6Dt-4J-FPR" secondAttribute="bottom" constant="8" id="lQy-uG-6HT"/>
                             <constraint firstItem="jJ0-DA-xMz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="rAn-yZ-vVX"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hGo-lU-63O" appends="YES" id="8lU-Qr-pwN"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="6Dt-4J-FPR" id="xA7-Gt-Ma8"/>
+                        <outlet property="textField" destination="jJ0-DA-xMz" id="nwn-8R-u57"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hGo-lU-63O">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="R1c-ML-BBv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="247" y="294"/>
         </scene>

@@ -12,6 +12,7 @@
 		8DAB049E1C6B49D80079E46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DAB049C1C6B49D80079E46F /* Main.storyboard */; };
 		8DAB04A01C6B49D90079E46F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DAB049F1C6B49D90079E46F /* Assets.xcassets */; };
 		8DAB04A31C6B49D90079E46F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DAB04A11C6B49D90079E46F /* LaunchScreen.storyboard */; };
+		8DD82E781C6F843D0039CA75 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD82E771C6F843D0039CA75 /* ConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8DAB049F1C6B49D90079E46F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DAB04A21C6B49D90079E46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DAB04A41C6B49D90079E46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD82E771C6F843D0039CA75 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				8DAB04981C6B49D80079E46F /* AppDelegate.swift */,
 				8DAB049A1C6B49D80079E46F /* ViewController.swift */,
+				8DD82E771C6F843D0039CA75 /* ConversionViewController.swift */,
 				8DAB049C1C6B49D80079E46F /* Main.storyboard */,
 				8DAB049F1C6B49D90079E46F /* Assets.xcassets */,
 				8DAB04A11C6B49D90079E46F /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DAB049B1C6B49D80079E46F /* ViewController.swift in Sources */,
+				8DD82E781C6F843D0039CA75 /* ConversionViewController.swift in Sources */,
 				8DAB04991C6B49D80079E46F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +288,7 @@
 				8DAB04A91C6B49D90079E46F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
