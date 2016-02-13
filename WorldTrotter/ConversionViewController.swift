@@ -14,11 +14,15 @@ class ConversionViewController: UIViewController {
     @IBOutlet weak var celsiusLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     
-    var fahrenhietValue:Double?
+    var fahrenhietValue:Double?{
+        didSet{
+            updateCelsiusLable()
+        }
+    }
     
     var celsiusValue:Double?{
         if let value = fahrenhietValue{
-            return (value - 32) * (5.0/9.0)
+            return (value - 32) * (5/9)
         }else{
             return nil
         }
@@ -34,10 +38,15 @@ class ConversionViewController: UIViewController {
     
     @IBAction func fahrenheitFieldEditingChanged(textField:UITextField){
         //celsiusLabel.text = textField.text
-        if let text = textField.text where !text.isEmpty{      //what is "where"?
-            celsiusLabel.text = textField.text
+//        if let text = textField.text where !text.isEmpty{      //what is "where"?
+//            celsiusLabel.text = textField.text
+//        }else{
+//            celsiusLabel.text = "???"
+//        }
+        if let text = textField.text,value = Double(text){
+            fahrenhietValue = value
         }else{
-            celsiusLabel.text = "???"
+            fahrenhietValue = nil
         }
     }
     
