@@ -79,6 +79,7 @@ class ConversionViewController: UIViewController,UITextFieldDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("1")
 
         // Do any additional setup after loading the view.
     }
