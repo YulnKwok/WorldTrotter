@@ -7,8 +7,22 @@
 //
 
 import UIKit
+import MapKit
 
 class MapViewController: UIViewController {
+    
+    var mapView:MKMapView!
+    
+    override func loadView() {
+        mapView = MKMapView()
+        view = mapView
+        
+        let segmantedControl = UISegmentedControl(items:["Standard","Hybrid","Satellite"])
+        segmantedControl.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+        segmantedControl.selectedSegmentIndex = 0
+        segmantedControl.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(segmantedControl)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
