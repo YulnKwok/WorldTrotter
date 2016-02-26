@@ -88,6 +88,16 @@
             </objects>
             <point key="canvasLocation" x="715" y="-8"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="gxA-Qy-x2D">
+            <objects>
+                <viewController id="3Ng-cr-jkj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="EEO-as-dNb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yID-Z7-iRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="-372"/>
+        </scene>
         <!--Map-->
         <scene sceneID="Fpu-tX-837">
             <objects>
@@ -110,6 +120,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kJh-zY-DOf"/>
                         <segue destination="Edh-ow-MVk" kind="relationship" relationship="viewControllers" id="JoV-Zb-mrB"/>
+                        <segue destination="3Ng-cr-jkj" kind="relationship" relationship="viewControllers" id="7Se-Wl-Fio"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UHu-zY-xeT" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -22,6 +22,33 @@ class MapViewController: UIViewController {
         segmantedControl.selectedSegmentIndex = 0
         segmantedControl.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(segmantedControl)
+        
+        //let topConstrain = segmantedControl.topAnchor.constraintEqualToAnchor(view.topAnchor)
+        let topConstrain = segmantedControl.topAnchor.constraintEqualToAnchor(topLayoutGuide.bottomAnchor,constant: 8)
+        //let leadingConstrain = segmantedControl.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor)
+        //let trailingConstrain = segmantedControl.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor)
+        let margins = view.layoutMarginsGuide
+        let leadingConstrain = segmantedControl.leadingAnchor.constraintEqualToAnchor(margins.leadingAnchor)
+        let trailingConstrain = segmantedControl.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor)
+        
+        topConstrain.active = true
+        leadingConstrain.active = true
+        trailingConstrain.active = true
+        
+        segmantedControl.addTarget(self, action: "mapTypeChanged:", forControlEvents: .ValueChanged)
+    }
+    
+    func mapTypeChanged(segControl:UISegmentedControl){
+        switch segControl.selectedSegmentIndex{
+        case 0:
+            mapView.mapType = .Standard
+        case 1:
+            mapView.mapType = .Hybrid
+        case 3:
+            mapView.mapType = .Satellite
+        default:
+            break
+        }
     }
 
     override func viewDidLoad() {
