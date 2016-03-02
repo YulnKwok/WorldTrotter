@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Convert-->
@@ -60,11 +61,13 @@
                         <constraints>
                             <constraint firstItem="J7Y-6i-cwf" firstAttribute="top" secondItem="jJ0-DA-xMz" secondAttribute="bottom" constant="22" id="2PY-2b-mth"/>
                             <constraint firstItem="6Dt-4J-FPR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5mr-83-bQT"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="J7Y-6i-cwf" secondAttribute="trailing" id="9cl-XD-nMG"/>
                             <constraint firstItem="hlA-lR-dAC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IL4-5r-Ztn"/>
                             <constraint firstItem="6Dt-4J-FPR" firstAttribute="top" secondItem="KSG-cE-RFL" secondAttribute="bottom" constant="8" id="Yla-xh-Dg9"/>
                             <constraint firstItem="jJ0-DA-xMz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YwK-S8-Z8U"/>
                             <constraint firstItem="KSG-cE-RFL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZUR-20-KI1"/>
                             <constraint firstItem="KSG-cE-RFL" firstAttribute="top" secondItem="J7Y-6i-cwf" secondAttribute="bottom" constant="8" id="ahV-56-9R0"/>
+                            <constraint firstItem="J7Y-6i-cwf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dGA-sn-Lx8"/>
                             <constraint firstItem="J7Y-6i-cwf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g2H-Qv-8Rm"/>
                             <constraint firstItem="hlA-lR-dAC" firstAttribute="top" secondItem="6Dt-4J-FPR" secondAttribute="bottom" constant="8" id="lQy-uG-6HT"/>
                             <constraint firstItem="jJ0-DA-xMz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="rAn-yZ-vVX"/>

@@ -28,6 +28,8 @@
 		8DAB04A21C6B49D90079E46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DAB04A41C6B49D90079E46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DD82E771C6F843D0039CA75 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		8DED64D51C8712E200F07A77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		8DED64D71C87139800F07A77 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				8DAB049D1C6B49D80079E46F /* Base */,
+				8DED64D51C8712E200F07A77 /* en */,
+				8DED64D71C87139800F07A77 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
