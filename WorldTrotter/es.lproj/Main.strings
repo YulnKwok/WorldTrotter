@@ -6,19 +6,19 @@
 "EEO-as-dNb.title" = "Item";
 
 /* Class = "UILabel"; text = "华氏度"; ObjectID = "J7Y-6i-cwf"; */
-"J7Y-6i-cwf.text" = "华氏度";
+"J7Y-6i-cwf.text" = "grados Fahrenheit";
 
 /* Class = "UILabel"; text = "是"; ObjectID = "KSG-cE-RFL"; */
-"KSG-cE-RFL.text" = "是";
+"KSG-cE-RFL.text" = "es realmente";
 
 /* Class = "UILabel"; text = "摄氏度"; ObjectID = "hlA-lR-dAC"; */
-"hlA-lR-dAC.text" = "摄氏度";
+"hlA-lR-dAC.text" = "grados Celsius";
 
 /* Class = "UITextField"; placeholder = "温度"; ObjectID = "jJ0-DA-xMz"; */
-"jJ0-DA-xMz.placeholder" = "温度";
+"jJ0-DA-xMz.placeholder" = "valor";
 
 /* Class = "UITabBarItem"; title = "Map"; ObjectID = "nXY-UG-h8R"; */
-"nXY-UG-h8R.title" = "Map";
+"nXY-UG-h8R.title" = "Mapa";
 
 /* Class = "UITabBarItem"; title = "Convert"; ObjectID = "sMj-pg-T25"; */
-"sMj-pg-T25.title" = "Convert";
+"sMj-pg-T25.title" = "Convertir";
